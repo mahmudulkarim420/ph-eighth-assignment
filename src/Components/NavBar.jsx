@@ -1,9 +1,14 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, Navigate } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 
 const NavBar = () => {
+    const handleGoBack = () => {
+    Navigate('/');
+  };
+
+
   const allNavLinks =
     'hover:text-[#8453e9] transition-colors duration-300 relative pb-1';
   const allActiveNavLinks =
@@ -80,7 +85,7 @@ const NavBar = () => {
               src={logo}
               alt="HERO.IO"
             />
-            <Link to="/" className="text-[#8453E9] font-bold text-xl">
+            <Link onClick={handleGoBack} to="/" className="text-[#8453E9] font-bold text-xl">
               HERO.IO
             </Link>
           </div>
