@@ -1,34 +1,46 @@
 import React from 'react';
-import { Link } from 'react-router';
+import { NavLink, Link } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 
 const NavBar = () => {
+  const baseClasses =
+    'hover:text-[#8453e9] transition-colors duration-300 relative pb-1';
+  const activeClasses =
+    'text-[#8453e9] underline decoration-[#8453e9] decoration-2 underline-offset-4';
+
   const links = (
     <>
       <li>
-        <Link
+        <NavLink
           to="/"
-          className="hover:text-[#8453e9] hover:underline decoration-[#8453e9] transition-colors duration-300"
+          className={({ isActive }) =>
+            `${baseClasses} ${isActive ? activeClasses : 'hover:underline'}`
+          }
+          end
         >
           Home
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link
+        <NavLink
           to="/apps"
-          className="hover:text-[#8453e9] hover:underline decoration-[#8453e9] transition-colors duration-300"
+          className={({ isActive }) =>
+            `${baseClasses} ${isActive ? activeClasses : 'hover:underline'}`
+          }
         >
           Apps
-        </Link>
+        </NavLink>
       </li>
       <li>
-        <Link
+        <NavLink
           to="/installation"
-          className="hover:text-[#8453e9] hover:underline decoration-[#8453e9] transition-colors duration-300"
+          className={({ isActive }) =>
+            `${baseClasses} ${isActive ? activeClasses : 'hover:underline'}`
+          }
         >
           Installation
-        </Link>
+        </NavLink>
       </li>
     </>
   );
@@ -81,7 +93,10 @@ const NavBar = () => {
         </div>
 
         <div className="navbar-end">
-          <a className="btn bg-gradient-to-r from-purple-700 to-purple-500 text-white border-none hover:from-purple-800 hover:to-purple-600 transition-all duration-300">
+          <a
+            href="আপনার-github-লিঙ্ক"
+            className="btn bg-gradient-to-r from-purple-700 to-purple-500 text-white border-none hover:from-purple-800 hover:to-purple-600 transition-all duration-300"
+          >
             <FaGithub className="mr-2 text-xl" />
             Contribute
           </a>

@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Apps = () => {
+const Banner = () => {
   return (
     <div>
-      ami app
+      hello
     </div>
   );
 };
 
-export default Apps;
+export default Banner;
