@@ -4,9 +4,9 @@ import { FaGithub } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 
 const NavBar = () => {
-  const baseClasses =
+  const allNavLinks =
     'hover:text-[#8453e9] transition-colors duration-300 relative pb-1';
-  const activeClasses =
+  const allActiveNavLinks =
     'text-[#8453e9] underline decoration-[#8453e9] decoration-2 underline-offset-4';
 
   const links = (
@@ -15,7 +15,7 @@ const NavBar = () => {
         <NavLink
           to="/"
           className={({ isActive }) =>
-            `${baseClasses} ${isActive ? activeClasses : 'hover:underline'}`
+            `${allNavLinks} ${isActive ? allActiveNavLinks : 'hover:underline'}`
           }
           end
         >
@@ -26,7 +26,7 @@ const NavBar = () => {
         <NavLink
           to="/apps"
           className={({ isActive }) =>
-            `${baseClasses} ${isActive ? activeClasses : 'hover:underline'}`
+            `${allNavLinks} ${isActive ? allActiveNavLinks : 'hover:underline'}`
           }
         >
           Apps
@@ -36,7 +36,7 @@ const NavBar = () => {
         <NavLink
           to="/installation"
           className={({ isActive }) =>
-            `${baseClasses} ${isActive ? activeClasses : 'hover:underline'}`
+            `${allNavLinks} ${isActive ? allActiveNavLinks : 'hover:underline'}`
           }
         >
           Installation
@@ -94,7 +94,7 @@ const NavBar = () => {
 
         <div className="navbar-end">
           <a
-            href="আপনার-github-লিঙ্ক"
+            href="#"
             className="btn bg-gradient-to-r from-purple-700 to-purple-500 text-white border-none hover:from-purple-800 hover:to-purple-600 transition-all duration-300"
           >
             <FaGithub className="mr-2 text-xl" />
