@@ -40,7 +40,7 @@ const Apps = () => {
 
   if (loading) {
     return (
-      <p className="text-center mt-20 text-gray-700">Loading all apps...</p>
+      <p  className="text-center mt-20 text-gray-700">Loading all apps...</p>
     );
   }
 
