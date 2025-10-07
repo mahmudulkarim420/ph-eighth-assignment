@@ -1,0 +1,364 @@
+[
+  {
+    "image": "https://picsum.photos/seed/appicon1/600/400",
+    "title": "DataFlow Analytics",
+    "companyName": "Insight Solutions",
+    "id": 1,
+    "description": "Visualise and analyze your business data with customizable dashboards and real-time reports.",
+    "size": 110,
+    "reviews": 8500,
+    "ratingAvg": 4.5,
+    "downloads": 4800000,
+    "ratings": [
+      { "name": "1 star", "count": 150 },
+      { "name": "2 star", "count": 250 },
+      { "name": "3 star", "count": 1000 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 3600 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon2/600/400",
+    "title": "ShiftScheduler Pro",
+    "companyName": "WorkTime Organizers",
+    "id": 2,
+    "description": "Easy staff scheduling, time-off requests, and shift swaps for managers and employees.",
+    "size": 75,
+    "reviews": 5200,
+    "ratingAvg": 4.8,
+    "downloads": 2100000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 1800 },
+      { "name": "5 star", "count": 3150 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon3/600/400",
+    "title": "RecipeGen AI",
+    "companyName": "Kitchen Tech Labs",
+    "id": 3,
+    "description": "Generate unique recipes based on the ingredients you already have in your pantry.",
+    "size": 150,
+    "reviews": 11000,
+    "ratingAvg": 4.2,
+    "downloads": 6500000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 600 },
+      { "name": "3 star", "count": 2000 },
+      { "name": "4 star", "count": 4500 },
+      { "name": "5 star", "count": 3600 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon4/600/400",
+    "title": "SecureChat Encrypted",
+    "companyName": "Privacy First Group",
+    "id": 4,
+    "description": "End-to-end encrypted messaging service for private and secure communication.",
+    "size": 90,
+    "reviews": 7800,
+    "ratingAvg": 4.7,
+    "downloads": 3900000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 3200 },
+      { "name": "5 star", "count": 4000 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon5/600/400",
+    "title": "DrawPad Vector",
+    "companyName": "Digital Canvas Studio",
+    "id": 5,
+    "description": "Professional vector graphics editor for creating logos, illustrations, and detailed artwork.",
+    "size": 220,
+    "reviews": 14000,
+    "ratingAvg": 4.1,
+    "downloads": 7500000,
+    "ratings": [
+      { "name": "1 star", "count": 400 },
+      { "name": "2 star", "count": 700 },
+      { "name": "3 star", "count": 2500 },
+      { "name": "4 star", "count": 5500 },
+      { "name": "5 star", "count": 4900 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon6/600/400",
+    "title": "LanguageLink Tutor",
+    "companyName": "Global EdTech",
+    "id": 6,
+    "description": "Personalized language learning with video calls to native speakers and AI-driven practice tests.",
+    "size": 180,
+    "reviews": 6000,
+    "ratingAvg": 4.6,
+    "downloads": 3200000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 2500 },
+      { "name": "5 star", "count": 2750 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon7/600/400",
+    "title": "HealthMetrics BMI",
+    "companyName": "Body Wellness Inc.",
+    "id": 7,
+    "description": "Calculate and track your BMI, caloric intake, and vital health statistics.",
+    "size": 40,
+    "reviews": 3500,
+    "ratingAvg": 4.4,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 450 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 1300 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon8/600/400",
+    "title": "CodeDebug Remote",
+    "companyName": "DevTools Solutions",
+    "id": 8,
+    "description": "Remote debugging tool for testing and fixing code across different platforms and environments.",
+    "size": 160,
+    "reviews": 9000,
+    "ratingAvg": 4.8,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 5100 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon9/600/400",
+    "title": "RecipeSaver Offline",
+    "companyName": "Kitchen Buddy",
+    "id": 9,
+    "description": "Save your favorite online recipes for offline access. Never lose a recipe again.",
+    "size": 65,
+    "reviews": 2800,
+    "ratingAvg": 4.3,
+    "downloads": 1200000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 300 },
+      { "name": "4 star", "count": 1300 },
+      { "name": "5 star", "count": 1000 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon10/600/400",
+    "title": "AquaFilter Hydration",
+    "companyName": "Pure Health Tech",
+    "id": 10,
+    "description": "Track your daily water intake and get smart reminders to stay hydrated.",
+    "size": 30,
+    "reviews": 7000,
+    "ratingAvg": 4.9,
+    "downloads": 3500000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 120 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 4800 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon11/600/400",
+    "title": "AuraMood Diary",
+    "companyName": "Mental Health Tools",
+    "id": 11,
+    "description": "Private mood tracking and journaling app to monitor emotional patterns and improve mental wellness.",
+    "size": 55,
+    "reviews": 4000,
+    "ratingAvg": 4.5,
+    "downloads": 1800000,
+    "ratings": [
+      { "name": "1 star", "count": 60 },
+      { "name": "2 star", "count": 140 },
+      { "name": "3 star", "count": 400 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 1900 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon12/600/400",
+    "title": "HomeBudget Sync",
+    "companyName": "Wealth Managers",
+    "id": 12,
+    "description": "Sync bank accounts, track joint spending, and manage household budgets with shared access.",
+    "size": 85,
+    "reviews": 9500,
+    "ratingAvg": 4.2,
+    "downloads": 4200000,
+    "ratings": [
+      { "name": "1 star", "count": 250 },
+      { "name": "2 star", "count": 450 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 3500 },
+      { "name": "5 star", "count": 3800 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon13/600/400",
+    "title": "EBook Library Pro",
+    "companyName": "Digital Reads Group",
+    "id": 13,
+    "description": "Access thousands of free ebooks and customize fonts and lighting for comfortable reading.",
+    "size": 170,
+    "reviews": 12000,
+    "ratingAvg": 4.4,
+    "downloads": 6000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 5000 },
+      { "name": "5 star", "count": 5000 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon14/600/400",
+    "title": "ProjectScope Planner",
+    "companyName": "Agile Development",
+    "id": 14,
+    "description": "Collaborative project management tool with Kanban boards, Gantt charts, and team communication.",
+    "size": 130,
+    "reviews": 7000,
+    "ratingAvg": 4.6,
+    "downloads": 3100000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 150 },
+      { "name": "3 star", "count": 500 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 3250 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon15/600/400",
+    "title": "WeatherSnap Alert",
+    "companyName": "SkyWatch Forecasts",
+    "id": 15,
+    "description": "Hyper-local weather alerts and rain predictions updated every 15 minutes.",
+    "size": 40,
+    "reviews": 6500,
+    "ratingAvg": 4.9,
+    "downloads": 4000000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 30 },
+      { "name": "3 star", "count": 100 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 4850 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon16/600/400",
+    "title": "AstroCal Planner",
+    "companyName": "Cosmic Time Tech",
+    "id": 16,
+    "description": "A unique calendar and planner that integrates lunar cycles and astronomical events into your schedule.",
+    "size": 70,
+    "reviews": 3800,
+    "ratingAvg": 4.5,
+    "downloads": 1500000,
+    "ratings": [
+      { "name": "1 star", "count": 80 },
+      { "name": "2 star", "count": 120 },
+      { "name": "3 star", "count": 350 },
+      { "name": "4 star", "count": 1500 },
+      { "name": "5 star", "count": 1750 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon17/600/400",
+    "title": "QuickEdit Markup",
+    "companyName": "Writer's Tools Hub",
+    "id": 17,
+    "description": "A minimalist text editor focused on Markdown and plain text efficiency for writers and coders.",
+    "size": 35,
+    "reviews": 5100,
+    "ratingAvg": 4.7,
+    "downloads": 2400000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 80 },
+      { "name": "3 star", "count": 270 },
+      { "name": "4 star", "count": 2100 },
+      { "name": "5 star", "count": 2600 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon18/600/400",
+    "title": "FinGraph Tracker",
+    "companyName": "Investment Visuals",
+    "id": 18,
+    "description": "Advanced charting and visualization tools for cryptocurrency and stock market analysis.",
+    "size": 190,
+    "reviews": 9200,
+    "ratingAvg": 4.2,
+    "downloads": 4800000,
+    "ratings": [
+      { "name": "1 star", "count": 300 },
+      { "name": "2 star", "count": 500 },
+      { "name": "3 star", "count": 1500 },
+      { "name": "4 star", "count": 3800 },
+      { "name": "5 star", "count": 3100 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon19/600/400",
+    "title": "DIY Builder Guide",
+    "companyName": "Home Project Kits",
+    "id": 19,
+    "description": "Step-by-step video tutorials and material lists for simple home improvement and DIY projects.",
+    "size": 120,
+    "reviews": 7000,
+    "ratingAvg": 4.6,
+    "downloads": 3600000,
+    "ratings": [
+      { "name": "1 star", "count": 90 },
+      { "name": "2 star", "count": 160 },
+      { "name": "3 star", "count": 550 },
+      { "name": "4 star", "count": 3000 },
+      { "name": "5 star", "count": 3200 }
+    ]
+  },
+  {
+    "image": "https://picsum.photos/seed/appicon20/600/400",
+    "title": "VoiceTune Mixer",
+    "companyName": "Audio Production Lab",
+    "id": 20,
+    "description": "A simple mobile studio for mixing, editing, and applying effects to recorded vocals and audio tracks.",
+    "size": 150,
+    "reviews": 6000,
+    "ratingAvg": 4.8,
+    "downloads": 2800000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 60 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 2200 },
+      { "name": "5 star", "count": 3500 }
+    ]
+  }
+
+]
+  

@@ -3,7 +3,7 @@ import React from 'react';
 const Reviews = () => {
   return (
     <div className="bg-gradient-to-r from-[#732ded] to-[#8453E9] py-10 sm:py-16 px-4 mb-8 sm:mb-16">
-      <div className="max-w-7xl mx-auto text-white text-center">
+      <div className="max-w-6xl mx-auto text-white text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-10 md:mb-16 leading-tight">
           Trusted By Millions, Built For You
         </h2>
