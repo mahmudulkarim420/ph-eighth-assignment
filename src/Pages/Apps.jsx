@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 import TrendingApp from '../Components/TrendingApp';
+import { Link } from 'react-router';
 
 const appsData = '/appsData.json';
 
@@ -40,7 +41,7 @@ const Apps = () => {
 
   if (loading) {
     return (
-      <p  className="text-center mt-20 text-gray-700">Loading all apps...</p>
+      <p className="text-center mt-20 text-gray-700">Loading all apps...</p>
     );
   }
 
@@ -62,7 +63,7 @@ const Apps = () => {
         <div className="w-full sm:w-auto sm:min-w-[300px]">
           <input
             type="text"
-            placeholder="Search by app title or description..."
+            placeholder="Search Apps"
             value={searchTerm}
             onChange={handleSearchChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:ring-[#8453E9] focus:border-[#8453E9] transition duration-150"
@@ -77,10 +78,18 @@ const Apps = () => {
           ))}
         </div>
       ) : (
-        <p className="text-center mt-16 text-xl text-gray-500">
-          No apps found matching "{searchTerm}".
+        <p className="text-center mt-16 text-4xl text-gray-500">
+          No apps found.
         </p>
       )}
+      <div className="flex justify-center mt-8">
+        <Link
+          to="/"
+          className="px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 transition duration-300 transform hover:scale-105"
+        >
+          Go to Home
+        </Link>
+      </div>
     </div>
   );
 };

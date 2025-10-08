@@ -1,10 +1,10 @@
 [
   {
-    "image": "https://picsum.photos/seed/appicon1/600/400",
-    "title": "DataFlow Analytics",
+    "image": "https://img.icons8.com/officel/80/database.png",
+    "title": "DataDash",
     "companyName": "Insight Solutions",
     "id": 1,
-    "description": "Visualise and analyze your business data with customizable dashboards and real-time reports.",
+    "description": "This advanced tool allows users to visualize, track, and analyze key business metrics using completely customizable dashboards. It provides dynamic, real-time reports with predictive analytics features to help you make data-driven decisions swiftly and efficiently across all departments.",
     "size": 110,
     "reviews": 8500,
     "ratingAvg": 4.5,
@@ -18,11 +18,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon2/600/400",
-    "title": "ShiftScheduler Pro",
+    "image": "https://picsum.photos/seed/shortappicon2/600/400",
+    "title": "ShiftUp",
     "companyName": "WorkTime Organizers",
     "id": 2,
-    "description": "Easy staff scheduling, time-off requests, and shift swaps for managers and employees.",
+    "description": "Simplify complex employee scheduling with our intuitive drag-and-drop interface. Managers can effortlessly create and modify rotas, handle time-off requests, and approve shift swaps. Employees gain instant mobile access to their schedules, boosting communication and reducing administrative overhead.",
     "size": 75,
     "reviews": 5200,
     "ratingAvg": 4.8,
@@ -36,11 +36,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon3/600/400",
-    "title": "RecipeGen AI",
+    "image": "https://picsum.photos/seed/shortappicon3/600/400",
+    "title": "RecipeAI",
     "companyName": "Kitchen Tech Labs",
     "id": 3,
-    "description": "Generate unique recipes based on the ingredients you already have in your pantry.",
+    "description": "Tired of looking for recipes? Our powerful AI instantly generates unique, delicious, and personalized recipes by analyzing the specific ingredients you currently have in your pantry and fridge. It also offers substitution suggestions and step-by-step cooking instructions for all skill levels.",
     "size": 150,
     "reviews": 11000,
     "ratingAvg": 4.2,
@@ -54,11 +54,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon4/600/400",
-    "title": "SecureChat Encrypted",
+    "image": "https://picsum.photos/seed/shortappicon4/600/400",
+    "title": "SecureText",
     "companyName": "Privacy First Group",
     "id": 4,
-    "description": "End-to-end encrypted messaging service for private and secure communication.",
+    "description": "Experience true privacy with SecureText. This end-to-end encrypted messaging service ensures that only you and the person you're communicating with can read what is sent. Features include disappearing messages, secure group chats, and multi-factor authentication for maximum security and peace of mind.",
     "size": 90,
     "reviews": 7800,
     "ratingAvg": 4.7,
@@ -72,11 +72,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon5/600/400",
-    "title": "DrawPad Vector",
+    "image": "https://picsum.photos/seed/shortappicon5/600/400",
+    "title": "VectorPro",
     "companyName": "Digital Canvas Studio",
     "id": 5,
-    "description": "Professional vector graphics editor for creating logos, illustrations, and detailed artwork.",
+    "description": "VectorPro is a full-featured, professional vector graphics editor designed for mobile and tablet use. Create stunning logos, detailed illustrations, and high-quality artwork with a powerful suite of drawing tools, layer management, and export options for all major vector formats.",
     "size": 220,
     "reviews": 14000,
     "ratingAvg": 4.1,
@@ -90,11 +90,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon6/600/400",
-    "title": "LanguageLink Tutor",
+    "image": "https://picsum.photos/seed/shortappicon6/600/400",
+    "title": "LinguaTutor",
     "companyName": "Global EdTech",
     "id": 6,
-    "description": "Personalized language learning with video calls to native speakers and AI-driven practice tests.",
+    "description": "Achieve fluency faster with a truly personalized language learning experience. Connect with native-speaking tutors via live video calls and reinforce your skills with AI-driven practice tests, flashcards, and interactive cultural lessons tailored to your proficiency level and learning pace.",
     "size": 180,
     "reviews": 6000,
     "ratingAvg": 4.6,
@@ -108,11 +108,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon7/600/400",
-    "title": "HealthMetrics BMI",
+    "image": "https://picsum.photos/seed/shortappicon7/600/400",
+    "title": "HealthTrack",
     "companyName": "Body Wellness Inc.",
     "id": 7,
-    "description": "Calculate and track your BMI, caloric intake, and vital health statistics.",
+    "description": "Take control of your health with our all-in-one monitor. Easily calculate and continuously track your BMI, daily caloric intake, weight changes, and other vital health statistics. Set personalized goals and receive insightful reports to help you maintain a balanced and healthy lifestyle.",
     "size": 40,
     "reviews": 3500,
     "ratingAvg": 4.4,
@@ -126,11 +126,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon8/600/400",
-    "title": "CodeDebug Remote",
+    "image": "https://picsum.photos/seed/shortappicon8/600/400",
+    "title": "CodeFix",
     "companyName": "DevTools Solutions",
     "id": 8,
-    "description": "Remote debugging tool for testing and fixing code across different platforms and environments.",
+    "description": "CodeFix is the essential tool for professional developers. It offers seamless remote debugging capabilities, allowing you to test, analyze, and fix code efficiently across a multitude of operating systems, virtual machines, and staging environments, drastically cutting down on development time.",
     "size": 160,
     "reviews": 9000,
     "ratingAvg": 4.8,
@@ -144,11 +144,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon9/600/400",
-    "title": "RecipeSaver Offline",
+    "image": "https://picsum.photos/seed/shortappicon9/600/400",
+    "title": "PantrySave",
     "companyName": "Kitchen Buddy",
     "id": 9,
-    "description": "Save your favorite online recipes for offline access. Never lose a recipe again.",
+    "description": "Never worry about losing your favorite culinary inspirations again! PantrySave lets you quickly clip and save recipes from any website, organizing them into personalized cookbooks for offline access. It's perfect for cooking in kitchens with poor Wi-Fi, ensuring your recipes are always at your fingertips.",
     "size": 65,
     "reviews": 2800,
     "ratingAvg": 4.3,
@@ -162,11 +162,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon10/600/400",
-    "title": "AquaFilter Hydration",
+    "image": "https://picsum.photos/seed/shortappicon10/600/400",
+    "title": "HydroGenius",
     "companyName": "Pure Health Tech",
     "id": 10,
-    "description": "Track your daily water intake and get smart reminders to stay hydrated.",
+    "description": "Staying hydrated is simple with HydroGenius. Accurately track your daily water intake with a clean, easy-to-use interface. Our smart, customizable reminders adapt to your personal schedule and activity level, helping you meet your hydration goals effortlessly throughout the day for better energy and focus.",
     "size": 30,
     "reviews": 7000,
     "ratingAvg": 4.9,
@@ -180,11 +180,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon11/600/400",
-    "title": "AuraMood Diary",
+    "image": "https://picsum.photos/seed/shortappicon11/600/400",
+    "title": "MoodLog",
     "companyName": "Mental Health Tools",
     "id": 11,
-    "description": "Private mood tracking and journaling app to monitor emotional patterns and improve mental wellness.",
+    "description": "MoodLog is your private sanctuary for self-reflection. This secure mood tracking and journaling application enables you to record daily thoughts, monitor emotional patterns over time, and gain valuable insights into your mental wellness journey through visual summaries and guided prompts.",
     "size": 55,
     "reviews": 4000,
     "ratingAvg": 4.5,
@@ -198,11 +198,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon12/600/400",
-    "title": "HomeBudget Sync",
+    "image": "https://picsum.photos/seed/shortappicon12/600/400",
+    "title": "SharedWallet",
     "companyName": "Wealth Managers",
     "id": 12,
-    "description": "Sync bank accounts, track joint spending, and manage household budgets with shared access.",
+    "description": "Simplify shared finances with SharedWallet. The app seamlessly and securely syncs with all your bank accounts, allowing you to track joint spending and manage household budgets with shared access for partners or family members. Get detailed expense breakdown reports and set spending limits to stay on track.",
     "size": 85,
     "reviews": 9500,
     "ratingAvg": 4.2,
@@ -216,11 +216,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon13/600/400",
-    "title": "EBook Library Pro",
+    "image": "https://picsum.photos/seed/shortappicon13/600/400",
+    "title": "LexiVerse",
     "companyName": "Digital Reads Group",
     "id": 13,
-    "description": "Access thousands of free ebooks and customize fonts and lighting for comfortable reading.",
+    "description": "LexiVerse provides unrestricted access to a massive catalog of thousands of free ebooks, magazines, and periodicals. Customize your reading experience with adjustable fonts, eye-friendly lighting filters (including a night mode), and personalized page-turning animations for optimal comfort.",
     "size": 170,
     "reviews": 12000,
     "ratingAvg": 4.4,
@@ -234,11 +234,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon14/600/400",
-    "title": "ProjectScope Planner",
+    "image": "https://picsum.photos/seed/shortappicon14/600/400",
+    "title": "FlowState",
     "companyName": "Agile Development",
     "id": 14,
-    "description": "Collaborative project management tool with Kanban boards, Gantt charts, and team communication.",
+    "description": "Power your agile team with FlowState. This robust project management tool supports collaborative work using flexible Kanban boards, detailed Gantt charts for timeline tracking, and integrated team communication features to keep everyone aligned and focused on project goals from start to finish.",
     "size": 130,
     "reviews": 7000,
     "ratingAvg": 4.6,
@@ -252,11 +252,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon15/600/400",
-    "title": "WeatherSnap Alert",
+    "image": "https://picsum.photos/seed/shortappicon15/600/400",
+    "title": "Atmosphere",
     "companyName": "SkyWatch Forecasts",
     "id": 15,
-    "description": "Hyper-local weather alerts and rain predictions updated every 15 minutes.",
+    "description": "Get ahead of the weather with Atmosphere. Receive precise, hyper-local weather alerts and real-time rain predictions for your exact street address. Our forecasts are updated every 15 minutes using next-generation radar technology, giving you the most accurate and timely information available.",
     "size": 40,
     "reviews": 6500,
     "ratingAvg": 4.9,
@@ -270,11 +270,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon16/600/400",
-    "title": "AstroCal Planner",
+    "image": "https://picsum.photos/seed/shortappicon16/600/400",
+    "title": "AstroPlan",
     "companyName": "Cosmic Time Tech",
     "id": 16,
-    "description": "A unique calendar and planner that integrates lunar cycles and astronomical events into your schedule.",
+    "description": "AstroPlan offers a unique twist on organization. It's a full-featured calendar and scheduling tool that seamlessly integrates the phases of the lunar cycle, major astronomical events, and zodiac alignments into your daily, weekly, and monthly planning.",
     "size": 70,
     "reviews": 3800,
     "ratingAvg": 4.5,
@@ -288,11 +288,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon17/600/400",
-    "title": "QuickEdit Markup",
+    "image": "https://picsum.photos/seed/shortappicon17/600/400",
+    "title": "ZenText",
     "companyName": "Writer's Tools Hub",
     "id": 17,
-    "description": "A minimalist text editor focused on Markdown and plain text efficiency for writers and coders.",
+    "description": "ZenText is the ultimate minimalist text editor designed for speed and efficiency. It focuses on Markdown and plain text, providing a distraction-free writing environment perfect for authors, coders, and anyone who values clean, fast content creation without unnecessary clutter or complex formatting options.",
     "size": 35,
     "reviews": 5100,
     "ratingAvg": 4.7,
@@ -306,11 +306,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon18/600/400",
-    "title": "FinGraph Tracker",
+    "image": "https://picsum.photos/seed/shortappicon18/600/400",
+    "title": "FinViz",
     "companyName": "Investment Visuals",
     "id": 18,
-    "description": "Advanced charting and visualization tools for cryptocurrency and stock market analysis.",
+    "description": "Gain a competitive edge with FinViz. This powerful app provides advanced charting and visualization tools, offering deep technical analysis for cryptocurrency, stocks, commodities, and other financial assets. Utilize dozens of technical indicators to spot trends and make informed trading decisions.",
     "size": 190,
     "reviews": 9200,
     "ratingAvg": 4.2,
@@ -324,11 +324,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon19/600/400",
-    "title": "DIY Builder Guide",
+    "image": "https://picsum.photos/seed/shortappicon19/600/400",
+    "title": "HomeCraft",
     "companyName": "Home Project Kits",
     "id": 19,
-    "description": "Step-by-step video tutorials and material lists for simple home improvement and DIY projects.",
+    "description": "From small fixes to full renovations, HomeCraft is your go-to DIY companion. It features clear, step-by-step video tutorials for a huge range of home improvement projects, complete with detailed, easy-to-follow material lists and essential tool recommendations for beginners and experts alike.",
     "size": 120,
     "reviews": 7000,
     "ratingAvg": 4.6,
@@ -342,11 +342,11 @@
     ]
   },
   {
-    "image": "https://picsum.photos/seed/appicon20/600/400",
-    "title": "VoiceTune Mixer",
+    "image": "https://picsum.photos/seed/shortappicon20/600/400",
+    "title": "SonicMix",
     "companyName": "Audio Production Lab",
     "id": 20,
-    "description": "A simple mobile studio for mixing, editing, and applying effects to recorded vocals and audio tracks.",
+    "description": "Turn your phone into a portable sound studio with SonicMix. This simple yet powerful mobile application allows you to mix multiple tracks, perform precise editing on recorded vocals, and apply a wide variety of professional audio effects and filters for podcasting, music production, and voiceovers on the go.",
     "size": 150,
     "reviews": 6000,
     "ratingAvg": 4.8,
@@ -359,6 +359,4 @@
       { "name": "5 star", "count": 3500 }
     ]
   }
-
 ]
-  

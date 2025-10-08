@@ -1,14 +1,18 @@
 import React from 'react';
 import { FiDownload } from 'react-icons/fi';
+import { Link } from 'react-router-dom';
 
 const TrendingApp = ({ app }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-gray-100 transform hover:scale-[1.03]">
-      <div className="w-full h-40 bg-gray-200 flex items-center justify-center text-gray-500 text-sm overflow-hidden">
+    <Link 
+      to={`/app/${app.id}`} 
+      className="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-gray-100 transform hover:scale-[1.03] no-underline"
+    >
+      <div className="w-full h-50 bg-white flex items-center justify-center text-gray-500 text-sm overflow-hidden">
         <img
           src={app.image}
-          alt={app.name}
-          className="w-full h-full object-cover"
+          alt={app.title}
+          className="max-w-[150px] max-h-[150px] object-cover p-2 rounded-2xl"
         />
       </div>
 
@@ -20,16 +24,16 @@ const TrendingApp = ({ app }) => {
         <div className="flex justify-between items-center text-sm">
           <div className="flex items-center bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-medium">
             <FiDownload className="mr-1" />
-            <span>{app.downloads}</span>
+            <span>{app.downloads}</span> 
           </div>
 
           <div className="flex items-center bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full text-xs font-medium">
             <span className="mr-1">⭐</span>
-            <span>{app.rating}</span>
+            <span>{app.ratingAvg}</span>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

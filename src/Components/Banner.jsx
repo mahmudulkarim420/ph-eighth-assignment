@@ -8,10 +8,13 @@ const Banner = () => {
     <div className="mt-[60px] md:mt-[100px] px-4">
       <div className="text-center">
         <h1 className="font-semibold text-[40px] leading-tight sm:text-[55px] md:text-[70px]">
-          We Build
-          <span className="text-[#8453E9] font-bold block">
-            Productive Apps
+          We Build 
+          <br />
+          <span className="text-[#8453E9] font-bold">
+            Productive 
           </span>
+
+          Apps
         </h1>
         <p className="max-w-[800px] mx-auto text-[#627382] mt-4 text-base md:text-lg px-2">
           At HERO.IO, we craft innovative apps designed to make everyday life
