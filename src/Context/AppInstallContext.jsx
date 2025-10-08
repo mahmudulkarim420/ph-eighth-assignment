@@ -2,27 +2,47 @@ import React, { createContext, useContext, useState } from 'react';
 
 const AppInstallContext = createContext();
 
+const getInitialInstalledAppIds = () => {
+  const storedIds = localStorage.getItem('installedAppIds');
+  return storedIds ? JSON.parse(storedIds) : [];
+};
+
 export const useAppInstall = () => {
   return useContext(AppInstallContext);
 };
 
 export const AppInstallProvider = ({ children }) => {
-  const [installedApps, setInstalledApps] = useState([]);
+  const [installedAppIds, setInstalledAppIds] = useState(
+    getInitialInstalledAppIds
+  );
 
-  const installApp = (appData) => {
-    if (!installedApps.find((app) => app.id === appData.id)) {
-      setInstalledApps((prevApps) => [...prevApps, appData]);
-    }
+  const installApp = (app) => {
+    const appIdString = app.id.toString();
+
+    setInstalledAppIds((prevIds) => {
+      const isAlreadyInstalled = prevIds.includes(appIdString);
+      if (isAlreadyInstalled) return prevIds;
+
+      const newIds = [...prevIds, appIdString];
+      localStorage.setItem('installedAppIds', JSON.stringify(newIds));
+      return newIds;
+    });
   };
 
   const uninstallApp = (appId) => {
-    setInstalledApps((prevApps) =>
-      prevApps.filter((app) => app.id.toString() !== appId.toString())
-    );
+    const appIdString = appId.toString();
+
+    setInstalledAppIds((prevIds) => {
+      const newIds = prevIds.filter((id) => id !== appIdString);
+
+      localStorage.setItem('installedAppIds', JSON.stringify(newIds));
+
+      return newIds;
+    });
   };
 
   const value = {
-    installedApps,
+    installedApps: installedAppIds,
     installApp,
     uninstallApp,
   };

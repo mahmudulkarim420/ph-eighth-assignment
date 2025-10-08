@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { FiDownload } from 'react-icons/fi';
 import { FaStar, FaUsers } from 'react-icons/fa';
+import { ToastContainer, toast } from 'react-toastify';
 import {
   BarChart,
   Bar,
@@ -15,6 +16,36 @@ import {
 import { useAppInstall } from '../Context/AppInstallContext';
 
 const DATA_FILE_PATH = '/appsData.json';
+
+const convertDownloadsToNumber = (downloadsString) => {
+  if (typeof downloadsString === 'number') return downloadsString;
+
+  if (!downloadsString) return 0;
+
+  const numericValue = parseFloat(downloadsString);
+  const unit = downloadsString.slice(-1).toUpperCase();
+
+  if (unit === 'M') {
+    return numericValue * 1000000;
+  } else if (unit === 'K') {
+    return numericValue * 1000;
+  }
+
+  if (!isNaN(numericValue) && isFinite(numericValue)) {
+    return numericValue;
+  }
+
+  return 0;
+};
+
+const formatDownloads = (num) => {
+  if (num >= 1000000) {
+    return (num / 1000000).toFixed(1) + 'M';
+  } else if (num >= 1000) {
+    return (num / 1000).toFixed(1) + 'K';
+  }
+  return num.toString();
+};
 
 const AppsDetails = () => {
   const { appId } = useParams();
@@ -42,7 +73,16 @@ const AppsDetails = () => {
         const allAppsData = await response.json();
         const foundApp = allAppsData.find((a) => a.id.toString() === appId);
 
-        setApp(foundApp);
+        if (foundApp) {
+          const processedApp = {
+            ...foundApp,
+            downloads: convertDownloadsToNumber(foundApp.downloads),
+          };
+
+          setApp(processedApp);
+        } else {
+          setError('App not found!');
+        }
       } catch (e) {
         console.error('Failed to fetch app data:', e);
         setError('Failed to load app data. Please check the file path.');
@@ -56,10 +96,8 @@ const AppsDetails = () => {
 
   useEffect(() => {
     if (app && installedApps) {
-      const isAppInstalled = installedApps.find(
-        (a) => a.id.toString() === app.id.toString()
-      );
-      setIsInstalled(!!isAppInstalled);
+      const isAppInstalled = installedApps.includes(app.id.toString());
+      setIsInstalled(isAppInstalled);
     }
   }, [app, installedApps]);
 
@@ -70,7 +108,7 @@ const AppsDetails = () => {
 
     setIsInstalled(true);
 
-    alert(`${app.title} is now installed! Check the Installation tab.`);
+    toast.success(`${app.title} is now installed! Check the Installation tab.`);
   };
 
   if (isLoading) {
@@ -102,16 +140,18 @@ const AppsDetails = () => {
 
   const totalReviews = app.reviews.toLocaleString();
 
+  const formattedDownloads = formatDownloads(app.downloads);
+
   return (
-    <div className="max-w-6xl mx-auto p-6 bg-white shadow-xl rounded-xl">
+    <div className="max-w-6xl mx-auto">
       <div className="flex mb-8 items-center border-b pb-6">
         <img
-          src={app.image || 'https://placehold.co/96x96/cccccc/333333?text=App'}
+          src={app.image}
           alt={app.title}
           className="w-24 h-24 rounded-2xl shadow-lg mr-6 object-cover"
         />
 
-        <div>
+        <div className="ml-20">
           <h1 className="text-3xl font-bold text-gray-900">{app.title}</h1>
           <p className="text-sm text-gray-600 mb-4">
             Developed by <br />{' '}
@@ -122,7 +162,8 @@ const AppsDetails = () => {
             <div>
               <p className="text-xl font-bold flex items-center justify-center">
                 <FiDownload className="text-blue-500 mr-1 text-base" />
-                {Math.round(app.downloads / 100000) / 10}M
+
+                {formattedDownloads}
               </p>
               <p className="text-xs text-gray-500">Downloads</p>
             </div>
@@ -150,16 +191,28 @@ const AppsDetails = () => {
 
           <button
             onClick={handleInstall}
-            disabled={isInstalled} // Disable the button after installation
+            disabled={isInstalled}
             className={`mt-4 font-bold py-2 px-6 rounded-lg text-lg transition duration-150 flex items-center ${
               isInstalled
-                ? 'bg-gray-400 cursor-not-allowed text-gray-700' // Disabled styles
-                : 'bg-[#00D390] hover:bg-[#0e7857] text-white shadow-lg' // Active styles
+                ? 'bg-gray-400 cursor-not-allowed text-gray-700'
+                : 'bg-[#00D390] hover:bg-[#0e7857] text-white shadow-lg'
             }`}
           >
             <FiDownload className="mr-2" />
             {isInstalled ? 'Installed' : `Install Now (${app.size} MB)`}
           </button>
+          <ToastContainer
+            position="top-right"
+            autoClose={3000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="colored"
+          />
         </div>
       </div>
 
