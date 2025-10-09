@@ -5,7 +5,7 @@ import InstalledAppCard from '../Components/InstalledAppCard';
 import SortSelect from '../Components/SortSelect';
 import { useAppInstall } from '../Context/AppInstallContext';
 
-const DATA_FILE_PATH = '/appsData.json';
+const appsData = '/appsData.json';
 
 const Installation = () => {
   const { installedApps, setInstalledApps } = useAppInstall();
@@ -25,7 +25,7 @@ const Installation = () => {
       }
 
       try {
-        const response = await fetch(DATA_FILE_PATH);
+        const response = await fetch(appsData);
         if (!response.ok)
           throw new Error(`HTTP error! status: ${response.status}`);
 
@@ -65,7 +65,7 @@ const Installation = () => {
     );
     localStorage.setItem('installedApps', JSON.stringify(updatedInstalled));
 
-    // context/state update
+    
     setInstalledApps(updatedInstalled);
   };
 
@@ -113,7 +113,7 @@ const Installation = () => {
 
             <Link
               to="/"
-              className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 transition duration-300"
+              className="inline-block px-6 py-3 bg-purple-600 text-white font-semibold rounded-lg shadow-md hover:bg-purple-700 transition duration-300"
             >
               Browse Trending Apps
             </Link>

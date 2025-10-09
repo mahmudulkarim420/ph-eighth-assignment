@@ -12,7 +12,7 @@ const TrendingApp = ({ app }) => {
         <img
           src={app.image}
           alt={app.title}
-          className="max-w-[150px] max-h-[150px] object-cover p-2 rounded-2xl"
+          className="max-w-[200px] max-h-[200px] object-cover p-2 rounded-2xl"
         />
       </div>
 

@@ -12,7 +12,7 @@ const Banner = () => {
           <br />
           <span className="text-[#8453E9] font-bold">
             Productive 
-          </span>
+          </span>{' '}
 
           Apps
         </h1>

@@ -1,24 +1,10 @@
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import { useAppInstall } from '../Context/AppInstallContext';
+import { FiDownload } from 'react-icons/fi';
 
-const DownloadIcon = ({ className = 'text-blue-500 mr-1' }) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="16"
-    height="16"
-    viewBox="0 0 24 24"
-    fill="none"
-    stroke="currentColor"
-    strokeWidth="2"
-    strokeLinecap="round"
-    strokeLinejoin="round"
-    className={className}
-  >
-    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-    <polyline points="7 10 12 15 17 10" />
-    <line x1="12" y1="15" x2="12" y2="3" />
-  </svg>
+const DownloadIcon = ({ className = 'text-purple-500 mr-1' }) => (
+  <FiDownload className={className} />
 );
 
 const StarIcon = ({ className = 'text-yellow-500 mr-1' }) => (
@@ -52,42 +38,69 @@ const InstalledAppCard = ({ app, onUninstall }) => {
 
     toast.success(`${app.title} has been uninstalled.`, {
       position: 'top-right',
-      autoClose: 3000,
-      theme: 'colored',
+      autoClose: 2000,
+      style: {
+        background: '#00D390',
+        color: '#fff',
+        fontWeight: 'bold',
+        borderRadius: '8px',
+        fontSize: '14px',
+        padding: '10px 14px',
+      },
+      progressStyle: {
+        background: '#ffffff',
+      },
+      icon: '✅',
     });
   };
 
   const downloadsDisplay = formatDownloads(app.downloads);
 
   return (
-    <div className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm mb-4">
-      <div className="flex items-center">
-        <img
-          src={app.image}
-          alt={app.title}
-          className="w-16 h-16 rounded-xl object-cover mr-4 shadow-sm"
-        />
-        <div>
-          <h3 className="text-lg font-semibold text-gray-800">{app.title}</h3>
-          <div className="flex items-center text-sm text-gray-500 mt-1 space-x-4">
-            <p className="flex items-center">
-              <DownloadIcon /> {downloadsDisplay}
-            </p>
-            <p className="flex items-center">
-              <StarIcon /> {app.ratingAvg}
-            </p>
-            <p className="text-sm text-gray-500">{app.size} MB</p>
+    <>
+      {/* ✅ Toast Container with NO external CSS */}
+      <ToastContainer
+        position="top-right"
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
+
+      <div className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg shadow-sm mb-4">
+        <div className="flex items-center">
+          <img
+            src={app.image}
+            alt={app.title}
+            className="w-16 h-16 rounded-xl object-cover mr-4 shadow-sm"
+          />
+          <div>
+            <h3 className="text-lg font-semibold text-gray-800">{app.title}</h3>
+            <div className="flex items-center text-sm text-gray-500 mt-1 space-x-4">
+              <p className="flex items-center">
+                <DownloadIcon /> {downloadsDisplay}
+              </p>
+              <p className="flex items-center">
+                <StarIcon /> {app.ratingAvg}
+              </p>
+              <p className="text-sm text-gray-500">{app.size} MB</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <button
-        onClick={handleUninstall}
-        className="flex items-center text-sm font-medium text-white bg-[#00D390] hover:bg-[#0e7857] px-4 py-2 rounded-lg transition duration-150 shadow"
-      >
-        Uninstall
-      </button>
-    </div>
+        <button
+          onClick={handleUninstall}
+          className="flex items-center text-sm font-medium text-white bg-[#00D390] hover:bg-[#0e7857] px-4 py-2 rounded-lg transition duration-150 shadow"
+        >
+          Uninstall
+        </button>
+      </div>
+    </>
   );
 };
 

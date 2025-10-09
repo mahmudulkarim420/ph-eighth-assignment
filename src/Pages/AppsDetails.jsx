@@ -155,13 +155,13 @@ const AppsDetails = () => {
           <h1 className="text-3xl font-bold text-gray-900">{app.title}</h1>
           <p className="text-sm text-gray-600 mb-4">
             Developed by <br />{' '}
-            <span className="font-medium text-blue-600">{app.companyName}</span>
+            <span className="font-medium text-purple-600">{app.companyName}</span>
           </p>
 
           <div className="flex space-x-6 text-center">
             <div>
               <p className="text-xl font-bold flex items-center justify-center">
-                <FiDownload className="text-blue-500 mr-1 text-base" />
+                <FiDownload className="text-purple-500 mr-1 text-base" />
 
                 {formattedDownloads}
               </p>
@@ -254,7 +254,7 @@ const AppsDetails = () => {
         <h2 className="text-2xl font-semibold text-gray-800 mb-4">
           Description
         </h2>
-        <p className="text-gray-700 leading-relaxed whitespace-pre-wrap">
+        <p className="text-gray-700 leading-relaxed whitespace-pre-wrap mb-10">
           {app.description}
         </p>
       </div>
