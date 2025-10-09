@@ -3,24 +3,20 @@ import { Link } from 'react-router-dom';
 import { CiSearch } from 'react-icons/ci';
 import TrendingApp from '../Components/TrendingApp';
 import LoadingSpinner from '../Pages/LoadingSpinner';
+import NoAppFound from './NoAppsFound';
 
 const appsData = '/appsData.json';
 
-const debounce = (func, delay) => {
-  let timeoutId;
-  return (...args) => {
-    clearTimeout(timeoutId);
-    timeoutId = setTimeout(() => {
-      func.apply(null, args);
-    }, delay);
-  };
+const formatNumber = (num) => {
+  if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+  if (num >= 1000) return (num / 1000).toFixed(1) + 'k';
+  return num;
 };
 
 const Apps = () => {
   const [allApps, setAllApps] = useState([]);
   const [filteredApps, setFilteredApps] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [isSearching, setIsSearching] = useState(false);
   const [searchTerm, setSearchTerm] = useState('');
 
   useEffect(() => {
@@ -37,44 +33,24 @@ const Apps = () => {
       });
   }, []);
 
-  const debouncedFilterFunction = debounce((term, apps) => {
-    const lowerCaseSearchTerm = term.toLowerCase().trim();
-
-    const results = apps.filter((app) =>
-      app.title.toLowerCase().includes(lowerCaseSearchTerm)
-    );
-
-    setFilteredApps(results);
-
-    setIsSearching(false);
-  }, 400);
-  // ৩. useEffect to run debounced search
-  useEffect(() => {
-    if (searchTerm !== '') {
-      setIsSearching(true);
-    } else {
-      setFilteredApps(allApps);
-      setIsSearching(false);
-      return;
-    }
-
-    debouncedFilterFunction(searchTerm, allApps);
-
-    return () => clearTimeout(debouncedFilterFunction._timeoutId);
-  }, [searchTerm, allApps]);
-
   const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value);
+    const term = e.target.value.toLowerCase();
+    setSearchTerm(term);
+
+    if (term === '') {
+      setFilteredApps(allApps);
+    } else {
+      const results = allApps.filter((app) =>
+        app.title.toLowerCase().includes(term)
+      );
+      setFilteredApps(results);
+    }
   };
 
-  if (loading) {
-    return <LoadingSpinner />;
-  }
+  if (loading) return <LoadingSpinner />;
 
   return (
     <div className="max-w-6xl mx-auto py-16 px-4">
-      {isSearching && <LoadingSpinner />}
-
       <h1 className="text-4xl sm:text-3xl font-extrabold text-center">
         Our All Applications
       </h1>
@@ -102,15 +78,18 @@ const Apps = () => {
       </div>
 
       {filteredApps.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {filteredApps.map((app) => (
-            <TrendingApp key={app.id} app={app} />
+            <TrendingApp
+              key={app.id}
+              app={{ ...app, downloads: formatNumber(app.downloads) }}
+            />
           ))}
         </div>
       ) : (
-        <p className="text-center mt-16 text-4xl text-gray-500">
-          No apps found.
-        </p>
+        
+          <NoAppFound></NoAppFound>
+        
       )}
 
       <div className="flex justify-center mt-8">

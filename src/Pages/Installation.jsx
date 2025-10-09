@@ -63,10 +63,11 @@ const Installation = () => {
     const updatedInstalled = installedApps.filter(
       (appId) => appId !== id.toString()
     );
-    localStorage.setItem('installedApps', JSON.stringify(updatedInstalled));
+    localStorage.setItem('installedAppIds', JSON.stringify(updatedInstalled));
 
-    
     setInstalledApps(updatedInstalled);
+
+    // ✅ Alert handled in InstalledAppCard
   };
 
   if (isLoading) {

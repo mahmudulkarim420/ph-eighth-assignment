@@ -1,9 +1,10 @@
 import React from 'react';
-import { NavLink, Link, Navigate } from 'react-router-dom';
+import { NavLink, Link, Navigate, useNavigate } from 'react-router-dom';
 import { FaGithub } from 'react-icons/fa';
 import logo from '../assets/logo.png';
 
 const NavBar = () => {
+  const Navigate = useNavigate();
     const handleGoBack = () => {
     Navigate('/');
   };

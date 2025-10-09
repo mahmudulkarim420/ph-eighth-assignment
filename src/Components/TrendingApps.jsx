@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import TrendingApp from './TrendingApp';
+import LoadingSpinner from '../Pages/LoadingSpinner';
 
 const appsData = '/appsData.json';
 
@@ -31,7 +32,7 @@ const TrendingApps = () => {
   if (loading) {
     return (
       <p className="text-center mt-20 text-gray-700">
-        Loading trending apps...
+        <LoadingSpinner></LoadingSpinner>
       </p>
     );
   }
