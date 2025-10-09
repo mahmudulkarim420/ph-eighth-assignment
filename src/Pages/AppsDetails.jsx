@@ -105,14 +105,14 @@ const AppsDetails = () => {
 
   return (
     <div className="max-w-6xl mx-auto p-4">
-      <div className="flex flex-col md:flex-row items-center md:items-start mb-8 border-b pb-6">
+      <div className="flex flex-col md:flex-row items-center md:items-center mb-8 border-b pb-6">
         <img
           src={app.image}
           alt={app.title}
-          className="w-20 h-20 md:w-24 md:h-24 rounded-2xl shadow-lg object-cover mb-4 md:mb-0"
+          className="w-32 h-32 md:w-48 md:h-48 rounded-2xl shadow-lg object-cover mb-6 md:mb-0"
         />
 
-        <div className="md:ml-20 text-center md:text-left">
+        <div className="md:ml-16 text-center md:text-left">
           <h1 className="text-2xl md:text-3xl font-bold text-gray-900">
             {app.title}
           </h1>
