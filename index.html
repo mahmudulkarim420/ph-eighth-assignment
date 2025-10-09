@@ -2,71 +2,28 @@
 <html data-theme="light" lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="src/assets/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HERO.IO</title>
-    
-    <style>
-      /* Load animation keyframe */
-      @keyframes spin-slow {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-      }
-
-      /* Full screen overlay style */
-      #initial-loader {
-        position: fixed;
-        inset: 0;
-        z-index: 9999;
-        display: flex;
-        flex-direction: column; 
-        align-items: center;
-        justify-content: center;
-        background-color: #ffffff; 
-        opacity: 1;
-        /* এই ট্রানজিশনটি শুধু Fade Out-এর জন্য, Scale Up-এর জন্য নয় */
-        transition: opacity 0.5s ease-out; 
-      }
-      
-      /* The "LOADING" text style */
-      .loading-text-container {
-        display: flex;
-        align-items: center;
-        font-size: 3rem; 
-        font-weight: 800;
-        color: #1f2937; 
-      }
-
-      /* Logo style and rotation */
-      .logo-spinner {
-        width: 4rem; 
-        height: 4rem; 
-        object-fit: contain;
-        margin: 0 0.5rem;
-        animation: spin-slow 1s linear infinite; /* লোগো ঘোরানোর অ্যানিমেশন */
-      }
-    </style>
   </head>
-  <body>
+  <body class="relative">
     
-    <div id="initial-loader">
-        <div class="loading-text-container">
+    <div id="initial-loader" class="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-white transition-opacity duration-500">
+        <div class="flex items-center text-3xl font-extrabold text-gray-800">
             <span>L</span>
-            <img src="/src/assets/logo.png" alt="Logo" class="logo-spinner" />
+            <img src="/src/assets/logo.png" alt="Logo" class="w-16 h-16 mx-2 object-contain animate-spin" />
             <span>ADING</span>
         </div>
-        <p style="margin-top: 1rem; font-size: 1.125rem; font-weight: 500; color: #3b82f6;">Loading Page...</p>
+        <p class="mt-4 text-lg font-medium text-purple-500">Loading Page...</p>
     </div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     
     <script>
-      // DOMContentLoaded বা Window Load এর পরে এই ফাংশনটি চলবে
       window.onload = function() {
         const initialLoader = document.getElementById('initial-loader');
         if (initialLoader) {
-          // এটি শুধু স্বচ্ছতা (Opacity) কমিয়ে দেয়, কোনো স্কেলিং করে না।
           initialLoader.style.opacity = '0';
-          
           setTimeout(() => {
             initialLoader.remove();
           }, 500); 

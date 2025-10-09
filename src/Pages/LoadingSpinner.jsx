@@ -19,7 +19,7 @@ const LoadingSpinner = () => {
         <span className="text-gray-900">ADING</span>
       </div>
 
-      <p className="absolute top-1/2 mt-20 text-xl font-medium text-blue-600 animate-pulse">
+      <p className="absolute top-1/2 mt-20 text-xl font-medium text-purple-600 animate-pulse">
         Please wait a moment...
       </p>
     </div>
