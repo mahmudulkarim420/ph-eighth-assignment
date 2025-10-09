@@ -2,10 +2,19 @@ import React from 'react';
 import { FiDownload } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
+const formatDownloads = (num) => {
+  if (typeof num !== 'number') return num;
+  if (num >= 1000000) return (num / 1000000).toFixed(1) + 'M';
+  if (num >= 1000) return (num / 1000).toFixed(1) + 'k';
+  return num.toString();
+};
+
 const TrendingApp = ({ app }) => {
+  const downloadsDisplay = formatDownloads(app.downloads);
+
   return (
-    <Link 
-      to={`/app/${app.id}`} 
+    <Link
+      to={`/app/${app.id}`}
       className="block bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 overflow-hidden border border-gray-100 transform hover:scale-[1.03] no-underline"
     >
       <div className="w-full h-50 bg-white flex items-center justify-center text-gray-500 text-sm overflow-hidden">
@@ -24,7 +33,7 @@ const TrendingApp = ({ app }) => {
         <div className="flex justify-between items-center text-sm">
           <div className="flex items-center bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-medium">
             <FiDownload className="mr-1" />
-            <span>{app.downloads}</span> 
+            <span>{downloadsDisplay}</span>
           </div>
 
           <div className="flex items-center bg-yellow-50 text-yellow-700 px-3 py-1 rounded-full text-xs font-medium">
