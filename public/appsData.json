@@ -502,41 +502,6 @@
       { "name": "4 star", "count": 1200 },
       { "name": "5 star", "count": 3000 }
     ]
-  },
-  {
-    "image": "https://img.icons8.com/clouds/300/workout-women.png",
-    "title": "AuraFit Ladies Trainer",
-    "companyName": "Placeholder Company",
-    "id": 29,
-    "description": "AuraFit Ladies Trainer provides a holistic and encouraging fitness platform specifically crafted for women's unique needs and aspirations. This app features a diverse collection of workout routines, including bodyweight exercises, gym routines, and specialized programs for various fitness levels, all accompanied by clear video demonstrations. It offers personalized training plans, nutritional guidance, and mindful meditation sessions to support both physical and mental well-being. Users can track their progress with detailed analytics, set achievable goals, and connect with a vibrant community of like-minded women for motivation and support. AuraFit fosters a positive self-image and empowers women to lead healthier, more active lives. Achieve your fitness dreams with expert guidance and a supportive network, making every step of your wellness journey rewarding and sustainable for the long term, without needing expensive personal trainers.",
-    "size": 50,
-    "reviews": 6543,
-    "ratingAvg": 4.2,
-    "downloads": 890123,
-    "ratings": [
-      { "name": "1 star", "count": 100 },
-      { "name": "2 star", "count": 200 },
-      { "name": "3 star", "count": 500 },
-      { "name": "4 star", "count": 1200 },
-      { "name": "5 star", "count": 3000 }
-    ]
-  },
-  {
-    "image": "https://img.icons8.com/doodle/300/piccollage.pn",
-    "title": "Artistic Collage Creator",
-    "companyName": "Placeholder Company",
-    "id": 30,
-    "description": "Artistic Collage Creator is an imaginative and easy-to-use photo editing app that empowers users to craft stunning visual narratives from their personal photos. This app provides a rich toolkit of frames, filters, text styles, and creative elements with a distinctive doodle aesthetic to give your collages a unique personality. Combine multiple images into beautiful layouts, adjust their placement with intuitive touch controls, and apply artistic effects to achieve your desired look. Users can also add hand-drawn doodles, custom stickers, and vibrant backgrounds to infuse each collage with personal charm. Share your delightful creations effortlessly across social media or save them in high resolution. Whether you're commemorating a special event or simply expressing your creativity, Artistic Collage Creator makes the process of turning memories into art both fun and accessible for everyone, regardless of their artistic skill level.",
-    "size": 50,
-    "reviews": 4321,
-    "ratingAvg": 4.3,
-    "downloads": 123456,
-    "ratings": [
-      { "name": "1 star", "count": 100 },
-      { "name": "2 star", "count": 200 },
-      { "name": "3 star", "count": 500 },
-      { "name": "4 star", "count": 1200 },
-      { "name": "5 star", "count": 3000 }
-    ]
   }
+ 
 ]
