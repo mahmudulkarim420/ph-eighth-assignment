@@ -67,7 +67,7 @@ const Installation = () => {
 
     setInstalledApps(updatedInstalled);
 
-    // ✅ Alert handled in InstalledAppCard
+   
   };
 
   if (isLoading) {
