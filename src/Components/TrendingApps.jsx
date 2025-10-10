@@ -50,7 +50,7 @@ const TrendingApps = () => {
         Explore All Trending Apps on the Market developed by us
       </p>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
         {featuredApps.map((app) => (
           <TrendingApp key={app.id} app={app} />
         ))}
